@@ -6,6 +6,19 @@
     <title>More</title>
 </head>
 <body>
+    <header>
+        <h1>More about us</h1>
+       <div id="mySidenav" class="sidenav">
+        <h1>Ryder Digitals</h1>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="history.html">History</a>
+            <a href="more.html">More</a>
+          </div>
+           <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    </header>
     <h1>Enhance your experience with Ryder Digitals</h1>
     <p>Want to start a journey with us?></p>
     <div class="container">
@@ -15,7 +28,9 @@
         <button type="button" onclick="closePopup()">Done</button>
         </div>
     </div>
-</body>
+<footer>
+    <p>&copy; 2026 Ryder Digitals. All rights reserved.</p>
+</footer>
 <script>
     let popup = document.getElementById("popup");
     function openPopup() {
@@ -25,4 +40,16 @@
         popup.classList.remove("close-popup");
     }
 </script>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</body>
 </html>
