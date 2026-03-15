@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More</title>
+</head>
+<body>
+    <h1>Enhance your experience with Ryder Digitals</h1>
+    <p>Want to start a journey with us?></p>
+    <div class="container">
+         <button type="sign up" class="btn" onclick="openPopup()">Sign up</button>
+        <div class="popup" id="popup">
+            <a href="signup.html">Sign up</a>
+        <button type="button" onclick="closePopup()">Done</button>
+        </div>
+    </div>
+</body>
+<script>
+    let popup = document.getElementById("popup");
+    function openPopup() {
+        popup.classList.add("open-popup");
+    }
+    function closePopup() {
+        popup.classList.remove("close-popup");
+    }
+</script>
+</html>
